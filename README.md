@@ -2,7 +2,7 @@
 
 In large development teams, maintaining consistency across user interfaces can be a daunting challenge. With developers utilizing varying measurements, styles, colors, and UI elements, the result is often a chaotic and disjointed user experience.
 
-This is and idea for design system which provides a centralized repository of predefined components, styles, and UI elements. By establishing a set of standardized guidelines and best practices, developers can easily access and implement consistent UI components, ensuring uniformity across all applications.
+This is an idea for design system which provides a centralized repository of predefined components, styles, and UI elements. By establishing a set of standardized guidelines and best practices, developers can easily access and implement consistent UI components, ensuring uniformity across all applications.
 
 With the Design System Module, developers no longer need to reinvent the wheel with each UI component. Instead, they can leverage a comprehensive collection of pre-designed elements, including buttons, lists, forms, and more. This not only streamlines the development process but also guarantees a cohesive and polished user interface.
 
