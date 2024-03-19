@@ -75,7 +75,46 @@ enum ColorToken {
     static let orange30 = SwiftUI.Color(red: 191/255, green: 77/255, blue: 0/255)
 }
 ```
+```swift
+enum FontToken {
 
+    static let largeTitle = SwiftUI.Font.custom(FontName.robotoBlack.rawValue, size: Size.size32.rawValue).weight(.black)
+    static let title = SwiftUI.Font.custom(FontName.robotoBlack.rawValue, size: Size.size28.rawValue).weight(.black)
+    static let subTitle = SwiftUI.Font.custom(FontName.robotoBold.rawValue, size: Size.size24.rawValue).weight(.bold)
+    static let headline = SwiftUI.Font.custom(FontName.robotoMedium.rawValue, size: Size.size24.rawValue).weight(.medium)
+    static let body = SwiftUI.Font.custom(FontName.robotoRegular.rawValue, size: Size.size12.rawValue).weight(.regular)
+    static let caption = SwiftUI.Font.custom(FontName.robotoRegular.rawValue, size: Size.size10.rawValue).weight(.regular)
+    static let notes = SwiftUI.Font.custom(FontName.robotoLight.rawValue, size: Size.size12.rawValue).weight(.light)
+    
+    
+    enum FontName: String, CaseIterable {
+        case robotoBlack = "Roboto-Black"
+        case robotoBold = "Roboto-Bold"
+        case robotoLight = "Roboto-Light"
+        case robotoMedium = "Roboto-Medium"
+        case robotoRegular = "Roboto-Regular"
+        case robotoThin = "Roboto-Thin"
+    }
+    
+    enum Size: CGFloat {
+        case size10 = 10.0
+        case size12 = 12.0
+        case size14 = 14.0
+        case size16 = 16.0
+        case size18 = 18.0
+        case size24 = 24.0
+        case size28 = 28.0
+        case size32 = 32.0
+    }
+}
+```
+
+# DesignSystemDemo
+Leveraging the principles outlined above, I have crafted a comprehensive minimum Design System encompassing a diverse array of UI components, from buttons and text fields to lists and card views. Each component adheres rigorously to our established design tokens, ensuring consistency and coherence across platforms.
+
+Check out the demo project, this gives some surface level experience of the power and versatility of the Design System as it navigates through the application's interface. Whether in dark or light mode, the UI remains sleek, intuitive, and visually captivating, thanks to the careful attention to detail and adherence to design principles.
+
+By embracing these Design System principles, developers can effortlessly integrate these standardized UI components into their projects, streamlining development workflows and accelerating time-to-market.
 
 
 ![demo](https://github.com/GRGBISHOW/DesignSystem/assets/20558114/1131ab4a-d7d8-4dad-9dc4-d0d9f6610584)
