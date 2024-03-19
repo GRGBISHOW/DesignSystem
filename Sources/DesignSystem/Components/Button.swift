@@ -43,7 +43,7 @@ struct ButtonStyle: SwiftUI.ButtonStyle {
         return configuration
             .label
             .modifier(TextModifier(style: .headline))
-            .padding(Spacing.regular)
+            .padding(Dimension.points16)
             .frame(height: type.size.height)
             .frame(maxWidth: isMaxWidth ? .infinity : type.size.width)
             .foregroundColor(type.textColor.value(scheme))
@@ -69,7 +69,7 @@ extension ButtonType {
     }
     
     var cornerRadius: CGFloat {
-        Dimension.xsmall.width
+        Dimension.points8
     }
     
     var textColor: Color {

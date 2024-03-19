@@ -99,9 +99,9 @@ enum FontToken {
     static let largeTitle = SwiftUI.Font.custom(FontName.robotoBlack.rawValue, size: Size.size32.rawValue).weight(.black)
     static let title = SwiftUI.Font.custom(FontName.robotoBlack.rawValue, size: Size.size28.rawValue).weight(.black)
     static let subTitle = SwiftUI.Font.custom(FontName.robotoBold.rawValue, size: Size.size24.rawValue).weight(.bold)
-    static let headline = SwiftUI.Font.custom(FontName.robotoMedium.rawValue, size: Size.size24.rawValue).weight(.regular)
-    static let body = SwiftUI.Font.custom(FontName.robotoRegular.rawValue, size: Size.size14.rawValue).weight(.regular)
-    static let caption = SwiftUI.Font.custom(FontName.robotoMedium.rawValue, size: Size.size14.rawValue).weight(.bold)
+    static let headline = SwiftUI.Font.custom(FontName.robotoMedium.rawValue, size: Size.size24.rawValue).weight(.medium)
+    static let body = SwiftUI.Font.custom(FontName.robotoRegular.rawValue, size: Size.size12.rawValue).weight(.regular)
+    static let caption = SwiftUI.Font.custom(FontName.robotoRegular.rawValue, size: Size.size10.rawValue).weight(.regular)
     static let notes = SwiftUI.Font.custom(FontName.robotoLight.rawValue, size: Size.size12.rawValue).weight(.light)
     
     
@@ -115,6 +115,7 @@ enum FontToken {
     }
     
     enum Size: CGFloat {
+        case size10 = 10.0
         case size12 = 12.0
         case size14 = 14.0
         case size16 = 16.0

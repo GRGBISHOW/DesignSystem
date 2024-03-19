@@ -17,9 +17,10 @@ public struct CardView<Content: View>: View {
     
     public var body: some View {
         content()
-            .padding(Spacing.regular)
+            .padding(Dimension.points16)
+            .foregroundColor(Color.defaultText.value(scheme))
             .background(Color.defaultCardViewBackground.value(scheme))
-            .cornerRadius(Dimension.xsmall.width)
+            .cornerRadius(Dimension.points8)
     }
 }
 

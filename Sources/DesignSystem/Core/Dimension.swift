@@ -8,9 +8,15 @@
 import Foundation
 
 public enum Dimension {
-    public static let xsmall = CGSize(width: 8, height: 8)
-    public static let small = CGSize(width: 16, height: 16)
-    public static let regular = CGSize(width: 24, height: 24)
-    public static let medium = CGSize(width: 32, height: 32)
-    public static let large = CGSize(width: 64, height: 64)
+    public static let points4 = 4.0
+    public static let points8 = 8.0
+    public static let points12 = 12.0
+    public static let points16 = 16.0
+    public static let points20 = 20.0
+    public static let points24 = 24.0
+    public static let points28 = 28.0
+    public static let points32 = 32.0
+    public static let points64 = 64.0
+    public static let points82 = 82.0
+    public static let points120 = 120.0
 }

@@ -18,6 +18,9 @@ public enum Color {
     
     // Fonts
     case defaultText
+
+    // View
+    case defaultIconTint
      
     
     // actions
@@ -44,8 +47,8 @@ public extension Color {
             return (ColorToken.grey10, ColorToken.purple100)
         case .defaultCardViewBackground:
             return (ColorToken.grey30, ColorToken.purple80)
-        case .defaultText, .secondaryActionText:
-            return(ColorToken.purple100, ColorToken.grey10)
+        case .defaultText, .secondaryActionText, .defaultIconTint:
+            return(ColorToken.purple90, ColorToken.grey10)
         case .primaryActionBackground:
             return(ColorToken.orange10, ColorToken.yellow40)
         case .primaryActionText:
