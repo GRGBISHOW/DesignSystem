@@ -20,8 +20,6 @@ public enum Font {
     }
 }
 
-
-
 public extension Text {
     func fontStyle (with style: Font.Style) -> Text {
         self.font(style.font)
