@@ -10,3 +10,4 @@ Say goodbye to version discrepancies and inconsistencies in UI components. With 
 
 We can also directly generate core files .swift/.kt from the Figma directly and push it our repo.But thats next adventure.
 
+![demo](https://github.com/GRGBISHOW/DesignSystem/assets/20558114/1131ab4a-d7d8-4dad-9dc4-d0d9f6610584)
