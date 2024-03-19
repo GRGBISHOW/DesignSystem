@@ -8,6 +8,7 @@
 import SwiftUI
 
 public struct ListItem: View {
+    @Environment(\.colorScheme) var scheme: ColorScheme
     let leftImage: String
     let title: String
     let description: String
@@ -27,11 +28,13 @@ public struct ListItem: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: Dimension.points4,
                            height: Dimension.points4)
+                    .foregroundColor(Color.defaultIconTint.value(scheme))
                 VStack(alignment: .leading, spacing: Dimension.points4) {
                     Text(title)
                         .fontStyle(with: .body)
                     Text(description)
                         .fontStyle(with: .caption)
+                        .foregroundColor(Color.descriptionText.value(scheme))
                 }
                 
                 Spacer()

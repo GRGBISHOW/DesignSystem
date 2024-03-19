@@ -42,7 +42,7 @@ struct ButtonStyle: SwiftUI.ButtonStyle {
         
         return configuration
             .label
-            .modifier(TextModifier(style: .headline))
+            .modifier(TextModifier(style: .body))
             .padding(Dimension.points16)
             .frame(height: type.size.height)
             .frame(maxWidth: isMaxWidth ? .infinity : type.size.width)
