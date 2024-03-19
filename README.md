@@ -8,10 +8,19 @@ With the Design System Module, developers no longer need to reinvent the wheel w
 
 Say goodbye to version discrepancies and inconsistencies in UI components. With the Design System Module, your development team can work efficiently and collaboratively, delivering exceptional user experiences with ease.
 
-We can also directly generate core files .swift/.kt from the Figma directly and push it our repo.But thats next adventure.
 
-![Screenshot 2024-03-19 at 8 59 27 pm](https://github.com/GRGBISHOW/DesignSystem/assets/20558114/5c0e2ddf-201a-4f55-9acb-81ddd324e1e3)
+At the heart of this workflow lies the generation of design tokens by our esteemed UI/UX team. These tokens serve as the foundational elements for defining colors, typography, spacing, and other design attributes. Leveraging these tokens, our Design System Team collaborates to produce core files in Swift, Kotlin, and CSS, tailored to the respective platforms of iOS, Android, and web.
 
+These core files, embodying the essence of our design system, are then systematically pushed to a centralized token repository. Here, they serve as the authoritative source of truth, ensuring uniformity and coherence across all platforms.
+
+Empowered by these core files, each development team - iOS, Android, and web - embarks on the creation of higher-level UI components. From ubiquitous elements such as buttons and text fields to more complex structures like lists and card views, these components are meticulously crafted to embody our design principles and guidelines.
+
+![Screenshot 2024-03-19 at 9 08 29 pm](https://github.com/GRGBISHOW/DesignSystem/assets/20558114/735bbf27-d45c-4be5-ada7-3c3159e25606)
+
+
+Subsequently, each development team meticulously pushes their platform-specific design system repositories. By doing so, they contribute to the collective knowledge and expertise of our organization, fostering collaboration and synergy across teams.
+
+Finally, these design system repositories become invaluable resources for all developers within our organization. Empowered by a wealth of standardized UI components, developers across teams can seamlessly integrate these elements into their projects, fostering consistency, efficiency, and excellence in our applications.
 
 
 ![demo](https://github.com/GRGBISHOW/DesignSystem/assets/20558114/1131ab4a-d7d8-4dad-9dc4-d0d9f6610584)
