@@ -23,6 +23,7 @@ public struct ListView<Content: View>: View {
         .listStyle(.plain)
         .padding(Dimension.points12)
         .scrollContentBackground(.hidden)
+        .background(Color.defaultBackground.value(scheme))
         
     }
 }

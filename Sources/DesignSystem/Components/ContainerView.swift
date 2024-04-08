@@ -17,7 +17,6 @@ public struct ContainerView<Content: View>: View {
     
     public var body: some View {
         content()
-            .padding(Dimension.points8)
             .background(Color.defaultBackground.value(scheme))
     }
 }
