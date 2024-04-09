@@ -36,7 +36,7 @@ public struct ListItem: View {
                     AsyncCachedImage(url: URL(string: uRLStr),
                             content: { image in
                                 image.resizable()
-                                     .aspectRatio(contentMode: .fit)
+                                     .aspectRatio(contentMode: .fill)
                                     
                             },
                             placeholder: {
