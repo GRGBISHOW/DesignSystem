@@ -45,7 +45,8 @@ public struct ListItem: View {
                                     .foregroundColor(Color.defaultIconTint.value(scheme))
                             }
                         )
-                    .frame(maxWidth: Dimension.points32)
+                    .frame(maxWidth: Dimension.points32, maxHeight: Dimension.points32)
+                    .cornerRadius(Dimension.points4)
                 }
                 
                 VStack(alignment: .leading, spacing: Dimension.points4) {
