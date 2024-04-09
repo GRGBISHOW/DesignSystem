@@ -33,7 +33,7 @@ public struct ListItem: View {
                                height:  Dimension.points4)
                         .foregroundColor(Color.defaultIconTint.value(scheme))
                 case .remote(let uRLStr):
-                    AsyncImage(url: URL(string: uRLStr ?? ""),
+                    AsyncCachedImage(url: URL(string: uRLStr),
                             content: { image in
                                 image.resizable()
                                      .aspectRatio(contentMode: .fit)
@@ -45,9 +45,8 @@ public struct ListItem: View {
                                     .foregroundColor(Color.defaultIconTint.value(scheme))
                             }
                         )
-                    .frame(maxWidth: Dimension.points32, maxHeight: Dimension.points32)
+                    .frame(maxWidth: Dimension.points32)
                 }
-                
                 
                 VStack(alignment: .leading, spacing: Dimension.points4) {
                     Text(title)
@@ -74,7 +73,7 @@ public struct ListItem: View {
 extension ListItem {
     public enum ImageSource {
         case system(String)
-        case remote(String?)
+        case remote(String)
     }
 }
 
